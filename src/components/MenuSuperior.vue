@@ -9,27 +9,28 @@ const menuAberto = ref(false);
 </script>
 
 <template>
-    <header>
-      <div class="header--logo">
-        <img src="@/assets/logoFakeStore.png" alt="Logo" />
-        <h1>FakeStore</h1>
-      </div>
-      <nav>
-        <ul :class="menuAberto ? 'menu' : ''">
-          <li>Home</li>
-          <li>Eletrônicos</li>
-          <li>Jóias</li>
-          <li>Masculino</li>
-          <li>Feminino</li>
-        </ul>
-      </nav>
-      <div class="header--icons">
-        <Account />
-        <CartPlus />
-        <Menu class="menu-hamburger" @click="menuAberto = !menuAberto" />
-      </div>
-    </header>
-  </template>
+  <header>
+    <div class="header--logo">
+      <img src="@/assets/logoFakeStore.png" alt="Logo" />
+      <h1>FakeStore</h1>
+    </div>
+    <nav>
+      <ul :class="menuAberto ? 'menu' : ''">
+        <li>Home</li>
+        <li>Eletrônicos</li>
+        <li>Jóias</li>
+        <li>Masculino</li>
+        <li>Feminino</li>
+      </ul>
+    </nav>
+    <div class="header--icons">
+      <Account />
+      <CartPlus />
+      <Menu class="menu-hamburger" @click="menuAberto = !menuAberto" />
+    </div>
+  </header>
+</template>
+
 <style scoped>
 header {
   background: #fff;
