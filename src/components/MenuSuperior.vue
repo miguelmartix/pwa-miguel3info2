@@ -26,21 +26,20 @@ const menuAberto = ref(false);
     <div class="header--icons">
       <Account />
       <CartPlus />
-      <Menu class="menu-hamburger" @click="menuAberto = !menuAberto" />
+      <Menu class="menu-hamburger" @click="menuAberto = !menuAberto"></Menu> />
     </div>
   </header>
 </template>
 
 <style scoped>
 header {
-  background: #fff;
+  background: #3d3c3c;
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
   padding: 0.2rem 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .header--logo {
   display: flex;
   align-items: center;
